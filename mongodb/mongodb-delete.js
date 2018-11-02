@@ -18,9 +18,9 @@ MongoClient.connect('mongodb://localhost:23516/bhaskar',{ useNewUrlParser: true 
     //     });
     
     // //findOneAndDelete
-    db.collection('bhaskar').findOneAndDelete({company:'123'}).then((result) =>{
-        console.log(result);
+    db.collection('test').deleteMany({company:'zomato'}).then((result) =>{
+        console.log(JSON.stringify(result));
     }); 
-    //client.close
+    client.close();
 });
 

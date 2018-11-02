@@ -13,8 +13,8 @@ if(err){
 console.log('Connected to Mongodb Server');
 const db = client.db('bhaskar')
 
-db.collection('bhaskar').insertOne({
-    company: '123',
+db.collection('test').insertOne({
+    company: 'zomato',
     completed: false
 }, (err,result) =>{
     if(err){
